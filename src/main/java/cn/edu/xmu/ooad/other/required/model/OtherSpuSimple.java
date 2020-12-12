@@ -11,12 +11,12 @@ import lombok.Data;
  *
  */
 @Data
-public class SpuSimple implements Serializable {
+public class OtherSpuSimple implements Serializable {
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = -5596867377128037070L;
-	List<SkuSimple> skus;
+	List<OtherSkuSimple> skus;
 	Long shopId;
 	Long spuId;
 }

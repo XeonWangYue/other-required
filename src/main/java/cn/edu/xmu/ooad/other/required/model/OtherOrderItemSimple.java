@@ -5,7 +5,7 @@ import java.io.Serializable;
 import lombok.Data;
 
 @Data
-public class OrderItemSimple implements Serializable {
+public class OtherOrderItemSimple implements Serializable {
 	/**
 	 * 
 	 */
@@ -16,10 +16,10 @@ public class OrderItemSimple implements Serializable {
 	Integer quantity;
 	Long orderId;
 	//返回实际支付的单价
-	Long finalPrice;
+	Long price;
 	String skuName;
 	
-	OrderItemSimple(){}
+	OtherOrderItemSimple(){}
 	/**
 	 * 构造函数
 	 * @param id ：orderitemid
@@ -28,10 +28,10 @@ public class OrderItemSimple implements Serializable {
 	 * @param shopId
 	 * @param finalPrice ：实际支付时的单价
 	 */
-	OrderItemSimple(Long id,Long skuId, Integer quantity, Long finalPrice, String skuName){
+	OtherOrderItemSimple(Long id,Long skuId, Integer quantity, Long price, String skuName){
 		setOrderItemId(id);
 		setSkuId(skuId);
-		setFinalPrice(finalPrice);
+		setPrice(price);
 		setQuantity(quantity);
 		setSkuName(skuName);
 	}

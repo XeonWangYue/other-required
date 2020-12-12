@@ -5,7 +5,7 @@ import java.io.Serializable;
 import lombok.Data;
 
 @Data
-public class SkuSimple implements Serializable{
+public class OtherSkuSimple implements Serializable{
 	/**
 	 * 
 	 */
@@ -14,12 +14,12 @@ public class SkuSimple implements Serializable{
 	Long spuId;
 	String skuName;
 	String skuSn;
-	Long originalPirce;
-	public SkuSimple() {};
-	public SkuSimple(Long id,Long spuId,String skuName,Long originalPrice) {
+	Long pirce;
+	public OtherSkuSimple() {};
+	public OtherSkuSimple(Long id,Long spuId,String skuName,Long price) {
 		setSkuId(skuId);
 		setSpuId(spuId);
 		setSkuName(skuName);
-		setOriginalPirce(originalPrice);
+		setPirce(price);
 	}
 }
