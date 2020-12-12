@@ -1,0 +1,10 @@
+*.log
+*.iml
+.idea/
+.history/
+target/
+.DS_Store
+application-dev.yaml
+.project
+.settings/
+.classpath
