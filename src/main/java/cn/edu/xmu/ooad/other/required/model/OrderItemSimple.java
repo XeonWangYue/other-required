@@ -14,9 +14,10 @@ public class OrderItemSimple implements Serializable {
 	Long orderItemId;
 	Long skuId;
 	Integer quantity;
-	Long shopId;
+	Long orderId;
 	//返回实际支付的单价
-	Integer finalPrice;
+	Long finalPrice;
+	String skuName;
 	
 	OrderItemSimple(){}
 	/**
@@ -27,11 +28,11 @@ public class OrderItemSimple implements Serializable {
 	 * @param shopId
 	 * @param finalPrice ：实际支付时的单价
 	 */
-	OrderItemSimple(Long id,Long skuId, Integer quantity, Long shopId, Integer finalPrice){
+	OrderItemSimple(Long id,Long skuId, Integer quantity, Long finalPrice, String skuName){
 		setOrderItemId(id);
 		setSkuId(skuId);
-		setShopId(shopId);
 		setFinalPrice(finalPrice);
 		setQuantity(quantity);
+		setSkuName(skuName);
 	}
 }

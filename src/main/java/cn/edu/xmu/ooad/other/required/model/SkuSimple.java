@@ -13,9 +13,10 @@ public class SkuSimple implements Serializable{
 	Long skuId;
 	Long spuId;
 	String skuName;
-	Integer originalPirce;
+	String skuSn;
+	Long originalPirce;
 	public SkuSimple() {};
-	public SkuSimple(Long id,Long spuId,String skuName,Integer originalPrice) {
+	public SkuSimple(Long id,Long spuId,String skuName,Long originalPrice) {
 		setSkuId(skuId);
 		setSpuId(spuId);
 		setSkuName(skuName);
