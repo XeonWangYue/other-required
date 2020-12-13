@@ -16,6 +16,7 @@ public class OtherSkuComplex implements Serializable{
 	String skuName;
 	String skuSn;
 	Long pirce;
+	
 	//spu部分
 	Long shopId;
 	
