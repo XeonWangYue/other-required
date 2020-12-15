@@ -42,10 +42,5 @@ public interface IOtherGoodsService {
 	 */
 	public List<OtherSpu> getSpusbyShopId(Long shopId);
 	public OtherSpu getSpubySpuId(Long SpuId);
-	/**
-	 * 
-	 * @param order
-	 * @return orderid
-	 */
-	public Long createASOrder(OtherOrderSend order);
+
 }
