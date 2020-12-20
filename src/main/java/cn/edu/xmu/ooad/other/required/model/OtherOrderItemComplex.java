@@ -22,7 +22,8 @@ public class OtherOrderItemComplex implements Serializable{
 	Long orderPrice;
 	//实际支付总金额
 	Long payPrice;
-	
+	//商品价格
+	Long orderItemPrice;
 	String skuName;
 	//order 部分
 	String orderSn;

@@ -11,7 +11,7 @@ public class OtherSkuSimple implements Serializable{
 	 */
 	private static final long serialVersionUID = -6050705991352804495L;
 	Long id;
-	Long skuSn;
+	String skuSn;
 	String name;
 	String imageUrl;
 	Long inventory;
