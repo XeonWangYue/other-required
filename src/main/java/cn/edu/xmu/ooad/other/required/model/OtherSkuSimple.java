@@ -16,7 +16,7 @@ public class OtherSkuSimple implements Serializable{
 	String imageUrl;
 	Long inventory;
 	Long originalPrice;
-	Long pirce;
+	Long price;
 	Boolean disable;
 	
 	public OtherSkuSimple() {};
