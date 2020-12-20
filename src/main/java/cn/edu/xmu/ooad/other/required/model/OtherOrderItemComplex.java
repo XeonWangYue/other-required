@@ -2,9 +2,13 @@ package cn.edu.xmu.ooad.other.required.model;
 
 import java.io.Serializable;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class OtherOrderItemComplex implements Serializable{
 	/**
 	 * 
@@ -14,30 +18,14 @@ public class OtherOrderItemComplex implements Serializable{
 	Long orderItemId;
 	Long skuId;
 	Integer quantity;
-	Long orderId;
-	//返回实际支付的单价
-	Long price;
+	//订单总支付价格
+	Long orderPrice;
+	//实际支付总金额
+	Long payPrice;
+	
 	String skuName;
 	//order 部分
 	String orderSn;
 	Long shopId;
 	
-	public OtherOrderItemComplex() {}
-	public OtherOrderItemComplex(Long orderItemId,
-	Long skuId,
-	Integer quantity,
-	Long orderId,
-	Long price,
-	String skuName,
-	String orderSn,
-	Long shopId) {
-		setOrderItemId(orderItemId);
-		setSkuId(skuId);
-		setQuantity(quantity);
-		setOrderId(orderId);
-		setPrice(price);
-		setSkuName(skuName);
-		setOrderSn(orderSn);
-		setShopId(shopId);
-	}
 }
