@@ -16,6 +16,7 @@ public class OtherOrderItemComplex implements Serializable{
 	private static final long serialVersionUID = 6921657369555237544L;
 	//id
 	Long orderItemId;
+	Long customerId;
 	Long skuId;
 	Integer quantity;
 	//实际支付总金额
