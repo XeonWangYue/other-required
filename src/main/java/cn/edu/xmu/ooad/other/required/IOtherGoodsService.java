@@ -48,5 +48,5 @@ public interface IOtherGoodsService {
 	 * @param skuId
 	 * @return
 	 */
-	public CouponActivitySimple getCouponActivityBySkuId(Long skuId);
+	public List<CouponActivitySimple> getCouponActivityBySkuId(Long skuId);
 }

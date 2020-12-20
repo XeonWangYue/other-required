@@ -18,14 +18,11 @@ public class OtherOrderItemComplex implements Serializable{
 	Long orderItemId;
 	Long skuId;
 	Integer quantity;
-	//订单总支付价格
-	Long orderPrice;
 	//实际支付总金额
-	Long payPrice;
-	//商品价格
-	Long orderItemPrice;
+	Long payment;
+	//商品价格结算单价
+	Long skuPrice;
 	String skuName;
-	//order 部分
 	String orderSn;
 	Long shopId;
 	
