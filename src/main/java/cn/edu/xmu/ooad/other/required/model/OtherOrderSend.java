@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class OtherOrderSend {
-	Long skuId;
+	Long orderItemId;
 	Long shopId;
 	Long regionId;
 	String consignee;
